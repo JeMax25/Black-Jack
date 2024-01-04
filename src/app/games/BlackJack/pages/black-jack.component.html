@@ -1,0 +1,30 @@
+<div class="game-container">
+  <div class="img-container">
+    <img src="../../../../assets/cards-black-jack/logo.png" alt="">
+  </div>
+  <div class="game-box-container">
+    <ul class="ul-table">
+      <li class="li-table"><span>Victorias:</span>{{wins}}</li>
+      <li class="li-table"><span>Derrrotas:</span>{{loses}}</li>
+    </ul>
+    <div class="points">
+      <h2>Puntos:{{pointsPj}}</h2>
+      <h2>Puntos:{{pointsCpu}}</h2>
+    </div>
+    <div class="cards-container">
+      <div class="card-box card-player">
+        <black-jack-cards [CardPjCpu]="card" *ngFor="let card of deckPj"
+                          class="card animate__animated animate__fadeInLeft"></black-jack-cards>
+      </div>
+       <ul class="ul-buttons">
+          <li class="li-buttons"><button class="button-1" (click)="newGame()">Nuevo Juego</button></li>
+          <li class="li-buttons"><button [disabled]="button2" class="button-2" (click)="takeCard()">Tomar Carta</button></li>
+          <li class="li-buttons"><button [disabled]="button3" class="button-3" (click)="stopGame()">Parar</button></li>
+        </ul>
+      <div class="card-box card-cpu">
+          <black-jack-cards [CardPjCpu]="card" *ngFor="let card of deckCpu"
+          class="card2 animate__animated animate__fadeInRight"></black-jack-cards>
+      </div>
+    </div>
+  </div>
+</div>

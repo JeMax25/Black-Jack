@@ -1,0 +1,146 @@
+.game-container {
+  height: 100vh;
+  width:  100vw;
+  background-image: url('../../../../assets/cards-black-jack/fondo-black-jack.jpg');
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+
+  font-family: 'Inter', sans-serif;
+}
+
+.img-container {
+  height: 30%;
+  width: 100px;
+  position: fixed;
+  right: 47%;
+  top: -15px;
+  z-index: 999;
+}
+
+.img-container > img {
+  height: 100%;
+}
+
+.points {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.points > h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.game-box-container {
+  border: 0px solid  black;
+  box-shadow: 5px 5px 40px 25px rgba(0, 0, 0, 0.647);
+  width: 80%;
+  height: 90%;
+  display: block;
+  margin: 2% auto;
+  border-radius: 15px;
+  position: relative;
+}
+
+.ul-table {
+  height: 80px;
+  display: flex;
+  background-image: url('https://img.freepik.com/vector-gratis/fondo-rojo_1057-4680.jpg?w=740&t=st=1698721897~exp=1698722497~hmac=b8a4191755edbcb93ee49ba27d95b1442f93905af1ede621c635e38cd4228efd');
+
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  border-radius: 15px 15px 0 0;
+
+  font-size: 2rem;
+  color: aliceblue;
+}
+
+.li-table {
+  padding-left: 15px;
+  padding-right: 35px;
+}
+
+.cards-container {
+  height: 84%;
+  width: 100%;
+  position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.card-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 150px;
+  height: 50%;
+  position: relative;
+  left: 100px;
+  margin-left: -85px;
+}
+.card2 {
+  width: 150px;
+  height: 50%;
+  position: relative;
+  right: 20px;
+  margin-left: -85px;
+
+}
+
+.ul-buttons {
+  list-style: none;
+  text-align: center;
+  width: 100px;
+  position: absolute;
+  left: 46%;
+}
+
+.li-buttons {
+  margin-bottom: 20px;
+}
+
+.li-buttons > button {
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+}
+
+.button-1 {
+  background-color: rgb(77, 77, 255);
+}
+
+.button-2 {
+  background-color: rgb(255, 234, 142);
+}
+
+.button-3 {
+  background-color: brown;
+}
+
+@media( min-width: 1400px ) {
+  .card {
+    width: 160px;
+    height: 70%;
+    left: 170px;
+  }
+  .card2 {
+    width: 170px;
+    height: 70%;
+    right: 70px;
+  }
+
+  .img-container {
+    right: 51%;
+  }
+}
